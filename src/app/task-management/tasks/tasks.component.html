@@ -1,0 +1,45 @@
+<!-- Main container -->
+<div class="tks-container">
+  <h1 class="tks-main-title">My tasks</h1>
+
+  <!-- Task form -->
+  <form #taskForm="ngForm" (ngSubmit)="createTask(taskForm); taskForm.reset()" class="tks-form">
+    <input type="text" name="task" ngModel required placeholder="Enter a new task..." class="input-group-text">
+    <input type="submit" value="Add Task" [disabled]="!taskForm.valid" class="btn  white fw-bold">
+  </form>
+
+  <!-- Tasks container -->
+  <div class="tks-columns-container">
+
+    <!-- Todo tasks column-->
+    <div class="tks-column">
+      <h2 class="dark-blue">Todo</h2>
+      <div class="tks-list-container">
+
+        <div *ngIf="todo.length === 0 || !todo" class="no-tks alert alert-danger">
+          No tasks!
+        </div>
+
+        <div *ngFor="let item of todo" class="tks-card">
+          {{ item.text }}
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Done tasks column -->
+    <div class="tks-column">
+      <h2 class="dark-blue">Done</h2>
+      <div class="tks-list-container">
+
+        <div *ngIf="done.length === 0 || !done" class="no-tks alert alert-danger">
+          No tasks!
+        </div>
+
+        <div *ngFor="let item of done" class="tks-card alert alert-danger">
+          {{ item.text }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

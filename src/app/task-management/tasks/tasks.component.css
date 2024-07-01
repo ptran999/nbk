@@ -1,0 +1,62 @@
+.tks-container {
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.tks-main-title {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #026487 !important;
+}
+
+.tks-columns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tks-column {
+  width: 45%;
+  margin-top: 30px;
+}
+
+.tks-column h2 {
+  text-align: center;
+}
+
+.tks-list-container {
+  border-radius: 4px;
+  background-color: #aaa;
+  padding: 10px;
+  min-height: 600px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.tks-form {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tks-form input[type="text"] {
+  flex-grow: 1;
+}
+
+.no-tks {
+  text-align: center;
+  margin-top: 50%;
+}
+
+.tks-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}

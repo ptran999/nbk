@@ -1,0 +1,30 @@
+/*
+  Title: nav.component.css
+  Author: Phuong Tran
+  Date: 6/4/2024
+  Description: Styles for the nav component.
+*/
+
+.bg-grey {
+  background-color: #717679;
+}
+
+.text-shadow {
+  text-shadow: .5px .5px #a7a7a7;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.line {
+  font-size: 18px;
+}
+
+.link-hover {
+  color: #049dc7;
+}
+
+.medium-text{
+  font-size: 20px;
+}

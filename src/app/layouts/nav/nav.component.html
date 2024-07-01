@@ -1,0 +1,67 @@
+<!--
+    Title: nav.component.html
+    Author: Phuong Tran
+    Date: 8/5/23
+    Description: WEB 450 - nodebucket.
+-->
+
+<nav class="ps-3 navbar navbar-expand-sm bg-grey ">
+  <a routerLink="/" class="navbar-brand light-blue fw-bold medium-text">NodeBucket</a>
+
+  <button
+  class="navbar-toggler"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navbarResponsive"
+  aria-controls="navbarResponsinve"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+  >
+
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ms-auto p-2">
+
+      <li class="nav-item ">
+        <a routerLink="/home" class="nav-link light-blue fw-bold medium-text">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="#" class="nav-link light-blue fw-bold medium-text">About Us</a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/contact-us" routerLinkActive="active" class="nav-link light-blue pointer fw-bold medium-text" [routerLinkActiveOptions]="{exact: true}">Contact Us</a>
+      </li>
+
+      <li *ngIf="isSignedIn" class="nav-item dropdown">
+        <a
+          href="#"
+          class="nav-link pe-3"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          >
+          <span class="material-icons text-white">person</span>
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-end bg-grey" aria-labelledby="navbarDropdown">
+          <li class="dropdown-item text-white">
+            <span class="fw-bold">{{ appUser.fullName }}</span>
+          </li>
+
+          <li>
+            <a routerLink="/tasks" class="dropdown-item link-hover">My Tasks</a>
+          </li>
+          <li>
+            <a (click)="signOut()" class="dropdown-item link-hover pointer">Sign Out</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</nav>

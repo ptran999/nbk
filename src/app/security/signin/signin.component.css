@@ -1,0 +1,17 @@
+/*
+  Title: sign-in.component.css
+  Author: Phuong Tran
+  Date: 6/5/24
+*/
+
+.small-text {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.err-msg {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  font-size: 0.8rem;
+}

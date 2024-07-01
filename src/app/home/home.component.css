@@ -1,0 +1,17 @@
+/*
+  Title: home.component.css
+  Author: Phuong Tran
+  Date: 6/4/2024
+  Description: Styles for the nav component.
+*/
+
+.btn {
+  width: 25%;
+}
+
+.container {
+  background-color: #dbd6d6;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 5px 8px 10px #0000002f;
+}

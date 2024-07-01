@@ -1,0 +1,32 @@
+<!--
+  Title: home.component.html
+  Author: Phuong Tran
+  Date: 6/4/2024
+  Description: WEB 450 - nodebucket.
+-->
+
+<div class="container text-center mt-5">
+
+  <ng-container *ngIf="isLoggedIn; else loggedOut">
+    <h1 class="dark-blue">Welcome to Nodebucket {{ authService.getFullName() }}!</h1>
+
+  </ng-container>
+
+  <ng-template #loggedOut>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 class="dark-blue">Welcome to Nodebucket!</h1>
+    <br />
+    <br />
+    <p class="lead mt-3 fw-bold dark-orange">Nodebucket app is all in one solution that can promote a better and productive life. Nodebucket helps you organize your daily life with one task at a time. It is more than a task management tools that have simplicity, user-friendly interface, allowing you to manage your tasks with ease. Come with us! We will help you stay in control of your projects, set priorities and track your daily tasks seamlessly.</p>
+    <br />
+    <br />
+    <a routerLink="/security/signin" class="btn btn-lg bg-blue white fw-bold">Log in</a>
+  </ng-template>
+
+  <br />
+  <br />
+
+</div>

@@ -1,0 +1,51 @@
+<!--
+    Title: signin.component.html
+    Author: Phuong Tran
+    Date: 8/5/23
+    Description: signin component.
+-->
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="card shadow">
+        <div class="card-title text-center">
+          <br />
+          <br />
+          <h2 class="p-2 dark-blue">Signin</h2>
+        </div>
+
+        <div class="card-body">
+          <form [formGroup]="signInForm" (ngSubmit)="signIn(); signInForm.reset();">
+            <div class="mb-3">
+              <label for="empId" class="form-label">Employeer  ID</label>
+              <input type="text" class="form-control" id="empId" formControlName="empId">
+              <span class="text-danger fst-italic small-text ">For employees only!</span>
+            </div>
+            <div class="alert alert-danger err-msg" role="alert" *ngIf="errorMessage">
+              {{ errorMessage }}
+            </div>
+            <br>
+            <div class="d-grid">
+              <button type="submit" class="btn bg-blue text-white fw-bold">
+                <span *ngIf="!isLoading">Signin</span>
+
+                <div *ngIf="isLoading">
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...
+                </div>
+              </button>
+              <br>
+              <button type="button" class="btn bg-blue text-white fw-bold" routerLink="/">Go Back</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+/*
+  Title: styles.css
+  Author: Phuong Tran
+  Date: 6/4/2024
+  Description: Styles for the app
+               Color: Harry Potter RavenClaw Palette theme
+*/
+
+body {
+  background-color: #9d7553 !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.bg-dark-blue {
+  background-color: #026487 !important;
+}
+
+.bg-blue {
+  background-color: #049dc7 !important;
+}
+
+.bg-dark-grey {
+  background-color: #646464;
+}
+
+.bg-light-grey {
+  background-color: #aaa;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.text-white {
+  color: #efeee9  !important;
+}
+
+.dark-blue {
+  color: #026487 !important;
+}
+
+.light-blue {
+  color: #049dc7 !important;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.dark-orange {
+  color: #9d7553 !important;
+  font-size: 20px;
+}
+
+.btn {
+  transition: 0.4s ease;
+  box-shadow:  0 4px 8px rgba(0,0,0,0.4);
+}
+
+.btn:hover {
+  background-color: #646464 !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: 0.5s ease;
+}

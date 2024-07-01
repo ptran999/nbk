@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer-text {
+  color: #049dc7 !important;
+  margin-top: 10px;
+  font-size: 20px;
+}
